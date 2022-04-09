@@ -1,0 +1,44 @@
+:root{
+    --bg--color: hsl(210, 46%, 95%);
+
+    --grayish--blue: hsl(212, 23%, 69%);
+
+    --desaturated--drak--blue: hsl(214, 17%, 51%);
+
+    --dark--grayish--blue: hsl(217, 19%, 35%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    background: var(--bg--color);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    // overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        width: 325px;
+        height: 500px;
+        background: white;
+        &__image{
+            width: 100%;
+            height: 43%;
+            background-position: center top;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+        &__main{
+            background: white;
+        }
+    }
+}
