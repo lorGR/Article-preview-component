@@ -87,4 +87,5 @@ body .card__main__summary__share button {
   border: none;
   padding: 0.65em;
   border-radius: 50%;
+  background: var(--bg--color);
 }
