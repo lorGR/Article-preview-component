@@ -7,8 +7,6 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -27,6 +25,7 @@ body .card {
   width: 325px;
   height: 500px;
   background: white;
+  border-radius: 20px;
 }
 body .card__image {
   width: 100%;
@@ -34,7 +33,58 @@ body .card__image {
   background-position: center top;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 body .card__main {
   background: white;
+  padding: 1.25em 2.6em;
+  border-radius: 10px;
+}
+body .card__main__title {
+  color: var(--dark--grayish--blue);
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+body .card__main__subtitle {
+  color: var(--desaturated--drak--blue);
+  line-height: 1.5;
+}
+body .card__main__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+body .card__main__summary__user {
+  display: flex;
+  align-items: center;
+}
+body .card__main__summary__user__image img {
+  width: 40px;
+  border-radius: 50%;
+}
+body .card__main__summary__user__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 1.25em;
+  gap: 0.25em;
+}
+body .card__main__summary__user__info p {
+  margin: 0;
+}
+body .card__main__summary__user__info .username {
+  color: var(--dark--grayish--blue);
+  font-weight: 700;
+}
+body .card__main__summary__user__info .date {
+  color: var(--grayish--blue);
+}
+body .card__main__summary__share button {
+  border: none;
+  padding: 0.65em;
+  border-radius: 50%;
 }
