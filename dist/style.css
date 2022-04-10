@@ -23,7 +23,7 @@ body {
 }
 body .card {
   width: 325px;
-  height: 500px;
+  height: 530px;
   background: white;
   border-radius: 20px;
 }
@@ -38,7 +38,7 @@ body .card__image {
 }
 body .card__main {
   background: white;
-  padding: 1.25em 2.6em;
+  padding: 1.25em 2.6em 0.75em 2.6em;
   border-radius: 10px;
 }
 body .card__main__title {
@@ -51,41 +51,47 @@ body .card__main__subtitle {
   color: var(--desaturated--drak--blue);
   line-height: 1.5;
 }
-body .card__main__summary {
+body .card__footer {
+  padding: 1em 2.6em 1em 2.6em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-body .card__main__summary__user {
+body .card__footer__user {
   display: flex;
   align-items: center;
+  gap: 1.25em;
 }
-body .card__main__summary__user__image img {
+body .card__footer__user__image img {
   width: 40px;
   border-radius: 50%;
 }
-body .card__main__summary__user__info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-left: 1.25em;
-  gap: 0.25em;
-}
-body .card__main__summary__user__info p {
+body .card__footer__user__info p {
   margin: 0;
 }
-body .card__main__summary__user__info .username {
+body .card__footer__user__info .username {
   color: var(--dark--grayish--blue);
   font-weight: 700;
 }
-body .card__main__summary__user__info .date {
+body .card__footer__user__info .date {
   color: var(--grayish--blue);
 }
-body .card__main__summary__share button {
+body .card__footer__share button {
   border: none;
   padding: 0.65em;
   border-radius: 50%;
   background: var(--bg--color);
+}
+body .card__footer__options {
+  display: flex;
+  gap: 1.5em;
+}
+body .card__footer__options span {
+  color: var(--grayish--blue);
+  letter-spacing: 4px;
+}
+body .hidden {
+  display: none;
 }

@@ -25,7 +25,7 @@ body{
     align-items: center;
     .card{
         width: 325px;
-        height: 500px;
+        height: 530px;
         background: white;
         border-radius: 20px;
         &__image{
@@ -39,7 +39,7 @@ body{
         }
         &__main{
             background: white;
-            padding: 1.25em 2.6em ;
+            padding: 1.25em 2.6em .75em 2.6em;
             border-radius: 10px;
             &__title{
                 color: var(--dark--grayish--blue);
@@ -51,48 +51,56 @@ body{
                 color: var(--desaturated--drak--blue);
                 line-height: 1.5;
             }
-            &__summary{
+        }
+        &__footer{
+            padding: 1em 2.6em 1em 2.6em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            &__user{
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
-                margin-top: 2em;
-                &__user{
-                    display: flex;
-                    align-items: center;
-                    &__image{
-                        img{
-                            width: 40px;
-                            border-radius: 50%;
-                        }
-                    }
-                    &__info{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
-                        margin-left: 1.25em;
-                        gap: .25em;
-                        p{
-                            margin: 0;
-                        }
-                        .username{
-                            color: var(--dark--grayish--blue);
-                            font-weight: 700;
-                        }
-                        .date{
-                            color: var(--grayish--blue);
-                        }
+                gap: 1.25em;
+                &__image{
+                    img{
+                        width: 40px;
+                        border-radius: 50%;
                     }
                 }
-                &__share{
-                    button{
-                        border: none;
-                        padding: .65em;
-                        border-radius: 50%;
-                        background: var(--bg--color);
+                &__info{
+                    p{
+                        margin: 0;
+                    }
+                    .username{
+                        color: var(--dark--grayish--blue);
+                        font-weight: 700;
+                    }
+                    .date{
+                        color: var(--grayish--blue);
                     }
                 }
             }
+            &__share{
+                button{
+                    border: none;
+                    padding: .65em;
+                    border-radius: 50%;
+                    background: var(--bg--color);
+                }
+            }
+            &__options{
+                display: flex;
+                gap: 1.5em;
+                span{
+                    color: var(--grayish--blue);
+                    letter-spacing: 4px;
+                }
+            }
         }
+    }
+    .hidden{
+        display: none;
     }
 }
